@@ -230,9 +230,11 @@ chmod 400 My-server-key.pem
 
 ## Result
 
+![Copy Private Key](images/copy-private-key.png)
+
 ---
 
-# Step 8: Access the Private EC2 Instance from the Bastion Host
+# Step 12: Access the Private EC2 Instance from the Bastion Host
 
 After copying the SSH private key to the Bastion Host, I established an SSH connection from the Bastion Host to the Private EC2 instance using its **Private IP Address**.
 
@@ -241,10 +243,8 @@ Since the Private EC2 instance does not have a Public IP address, it cannot be a
 ## SSH Command
 
 ```bash
-ssh -i My-server-key.pem ec2-user@10.0.2.45
+ssh -i My-server-key.pem ec2-user@10.0.2.38
 ```
-
-> **Note:** Replace `10.0.2.45` with your Private EC2 instance's private IP address.
 
 ## Result
 
@@ -261,4 +261,4 @@ ssh -i My-server-key.pem ec2-user@10.0.2.45
 - Updated file permissions to ensure secure SSH authentication.
 - The Bastion Host is now ready to connect to the private EC2 instance.
 
-![Copy Private Key](images/copy-private-key.png)
+
