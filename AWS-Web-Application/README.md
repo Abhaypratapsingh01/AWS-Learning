@@ -26,4 +26,4 @@ The infrastructure is designed to meet the following requirements:
 
 The following architecture shows the complete network design of the project. The web server is deployed in the public subnet, while the database server is deployed in the private subnet. Administrative access is provided through a Bastion Host, and private instances access the internet through a NAT Gateway.
 
-[Architecture Diagram](/images/architecture.png)
+[Architecture Diagram](images/architecture.png)
