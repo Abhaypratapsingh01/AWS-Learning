@@ -171,3 +171,19 @@ The instance does not have a Public IP, preventing direct internet access.
 The database remains protected from external users while allowing secure communication with the application.
 
 ![Database Server](images/database-server.png)
+
+---
+
+# Step 9: Configure Security Groups
+
+Security Groups were configured to control inbound and outbound traffic for each instance.
+
+| Instance | Allowed Access |
+|----------|----------------|
+| Bastion Host | SSH (22) from My IP |
+| Web Server | HTTP (80), HTTPS (443), SSH from Bastion Host |
+| Database Server | MySQL (3306) from Web Server |
+
+This configuration ensures that only authorized resources can communicate with each other.
+
+![Security Groups](images/security-group.png)
