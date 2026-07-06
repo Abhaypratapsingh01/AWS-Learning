@@ -38,3 +38,25 @@ The first step was to create a Virtual Private Cloud (VPC) with the CIDR block *
 - Enables secure communication between AWS resources.
 
   [VPC](images/VPC.png)
+
+  ---
+
+# Step 2: Create Public and Private Subnets
+
+After creating the VPC, two subnets were created to separate public-facing resources from internal resources.
+
+### Public Subnet
+- CIDR Block: **10.0.1.0/24**
+- Used for:
+  - Bastion Host
+  - Web Server
+  - NAT Gateway
+
+### Private Subnet
+- CIDR Block: **10.0.2.0/25**
+- Used for:
+  - Database Server
+
+This design improves security by ensuring that sensitive resources remain inaccessible from the public internet.
+
+![Subnets](images/subnet.png)
