@@ -110,3 +110,23 @@ The NAT Gateway allows instances inside the Private Subnet to access the interne
 - Required for software updates
 
 ![NAT Gateway](images/nat-gateway.png)
+
+---
+
+# Step 6: Launch Bastion Host
+
+A Bastion Host was launched in the **Public Subnet** to provide secure SSH access to instances located in the Private Subnet.
+
+The Bastion Host acts as a secure jump server, ensuring that private instances are never directly exposed to the internet.
+
+### Configuration
+
+- Public Subnet
+- Public IP Enabled
+- SSH (Port 22) allowed only from my IP address
+
+### Result
+
+Administrators can securely access private resources through the Bastion Host.
+
+![Bastion Host](images/bastion-host.png)
