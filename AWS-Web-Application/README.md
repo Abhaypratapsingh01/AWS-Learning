@@ -256,6 +256,30 @@ ssh -i My-server-key.pem ec2-user@10.0.2.38
 
 ![Private EC2 SSH](images/private-ec2-ssh.png)
 
+---
+
+# Step 9: Verify Internet Access from the Private EC2 Instance
+
+After successfully connecting to the Private EC2 instance through the Bastion Host, internet connectivity was verified.
+
+Although the Private EC2 instance does not have a Public IP address, it can still access the internet through the **NAT Gateway**. This allows the instance to download software updates and install required packages while remaining inaccessible from the public internet.
+
+## Verification Commands
+
+```bash
+- ping 8.8.8.8
+```
+
+## Result
+
+- Successfully downloaded packages from the internet.
+- Confirmed that outbound internet access is working through the NAT Gateway.
+- Verified that the Private EC2 instance remains secure without a Public IP address.
+
+## Output
+
+![NAT Gateway Test](images/nat-gateway-test.png)
+
 - Successfully copied the private key to the Bastion Host.
 - Verified that the key file exists.
 - Updated file permissions to ensure secure SSH authentication.
