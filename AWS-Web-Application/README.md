@@ -278,7 +278,7 @@ Although the Private EC2 instance does not have a Public IP address, it can stil
 
 ## Output
 
-![NAT Gateway Test](images/nat-gateway-test.png))
+![NAT Gateway Test](images/nat-gateway-test.png).png)
 
 - Successfully copied the private key to the Bastion Host.
 - Verified that the key file exists.
