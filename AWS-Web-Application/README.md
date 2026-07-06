@@ -36,3 +36,5 @@ The first step was to create a Virtual Private Cloud (VPC) with the CIDR block *
 - Provides network isolation.
 - Allows creation of public and private subnets.
 - Enables secure communication between AWS resources.
+
+- [VPC](images/vpc.png)
