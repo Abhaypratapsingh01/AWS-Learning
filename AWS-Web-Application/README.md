@@ -130,3 +130,24 @@ The Bastion Host acts as a secure jump server, ensuring that private instances a
 Administrators can securely access private resources through the Bastion Host.
 
 ![Bastion Host](images/bastion-host.png)
+
+---
+
+# Step 7: Launch Web Server
+
+An EC2 instance was launched in the **Public Subnet** to host the web application.
+
+The web server is accessible through its Public IP and serves HTTP requests from internet users.
+
+### Configuration
+
+- Public Subnet
+- Public IP Enabled
+- HTTP (80)
+- HTTPS (443)
+
+### Result
+
+Users can access the deployed web application through a web browser.
+
+![Web Server](images/web-server.png)
