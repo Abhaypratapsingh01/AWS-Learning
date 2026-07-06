@@ -151,3 +151,23 @@ The web server is accessible through its Public IP and serves HTTP requests from
 Users can access the deployed web application through a web browser.
 
 ![Web Server](images/web-server.png)
+
+---
+
+# Step 8: Launch Database Server
+
+A database server was deployed inside the **Private Subnet** to securely store application data.
+
+The instance does not have a Public IP, preventing direct internet access.
+
+### Configuration
+
+- Private Subnet
+- No Public IP
+- Accessible only from the Web Server
+
+### Result
+
+The database remains protected from external users while allowing secure communication with the application.
+
+![Database Server](images/database-server.png)
