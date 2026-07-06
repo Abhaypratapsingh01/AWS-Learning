@@ -74,3 +74,23 @@ Without an Internet Gateway, the web server cannot receive requests from interne
 - Web Server becomes accessible through its Public IP.
 
 ![Internet Gateway](images/internet-gateway.png)
+
+---
+
+# Step 5: Configure Route Tables
+
+Two Route Tables were configured.
+
+### Public Route Table
+
+- Connected to Internet Gateway
+- Associated with Public Subnet
+
+### Private Route Table
+
+- Connected to NAT Gateway
+- Associated with Private Subnet
+
+This routing configuration ensures that only public resources receive direct internet access while private resources access the internet securely through the NAT Gateway.
+
+![Route Table](images/route-table.png)
