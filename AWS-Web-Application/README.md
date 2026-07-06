@@ -187,3 +187,25 @@ Security Groups were configured to control inbound and outbound traffic for each
 This configuration ensures that only authorized resources can communicate with each other.
 
 ![Security Groups](images/security-group.png)
+
+---
+
+# Step 10: Access the Bastion Host
+
+The Bastion Host was launched in the **Public Subnet** with a Public IP address. It acts as a secure jump server for accessing instances located in the Private Subnet.
+
+The administrator connected to the Bastion Host using SSH and the downloaded key pair.
+
+### SSH Command
+
+```bash
+ssh -i "My-server-key.pem" ec2-user@<Bastion-Public-IP>
+```
+
+### Result
+
+- Successfully connected to the Bastion Host.
+- Secure administrative access established.
+- Ready to connect to private instances.
+
+![Bastion Host SSH](images/bastion-host-ssh.png)
