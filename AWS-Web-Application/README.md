@@ -60,3 +60,17 @@ After creating the VPC, two subnets were created to separate public-facing resou
 This design improves security by ensuring that sensitive resources remain inaccessible from the public internet.
 
 ![Subnets](images/subnet.png)
+
+---
+
+# Step 3: Attach an Internet Gateway
+
+An Internet Gateway (IGW) was attached to the VPC to provide internet connectivity for resources deployed in the public subnet.
+
+Without an Internet Gateway, the web server cannot receive requests from internet users.
+
+### Result
+- Public Subnet can communicate with the Internet.
+- Web Server becomes accessible through its Public IP.
+
+![Internet Gateway](images/internet-gateway.png)
