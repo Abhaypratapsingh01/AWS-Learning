@@ -27,3 +27,12 @@ The infrastructure is designed to meet the following requirements:
 The following architecture shows the complete network design of the project. The web server is deployed in the public subnet, while the database server is deployed in the private subnet. Administrative access is provided through a Bastion Host, and private instances access the internet through a NAT Gateway.
 
 [Architecture Diagram](images/architecture.png)
+
+# Step 1: Create a Virtual Private Cloud (VPC)
+
+The first step was to create a Virtual Private Cloud (VPC) with the CIDR block **10.0.0.0/16**. The VPC provides an isolated networking environment where all AWS resources are deployed securely.
+
+**Purpose:**
+- Provides network isolation.
+- Allows creation of public and private subnets.
+- Enables secure communication between AWS resources.
