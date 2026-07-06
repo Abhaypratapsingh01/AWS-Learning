@@ -77,7 +77,7 @@ Without an Internet Gateway, the web server cannot receive requests from interne
 
 ---
 
-# Step 5: Configure Route Tables
+# Step 4: Configure Route Tables
 
 Two Route Tables were configured.
 
@@ -97,7 +97,7 @@ This routing configuration ensures that only public resources receive direct int
 
 ---
 
-# Step 4: Create NAT Gateway
+# Step 5: Create NAT Gateway
 
 A NAT Gateway was deployed in the Public Subnet with an Elastic IP.
 
