@@ -94,3 +94,19 @@ Two Route Tables were configured.
 This routing configuration ensures that only public resources receive direct internet access while private resources access the internet securely through the NAT Gateway.
 
 ![Route Table](images/route-table.png)
+
+---
+
+# Step 4: Create NAT Gateway
+
+A NAT Gateway was deployed in the Public Subnet with an Elastic IP.
+
+The NAT Gateway allows instances inside the Private Subnet to access the internet for software updates without exposing them to inbound internet traffic.
+
+### Benefits
+
+- Secure outbound internet access
+- No inbound internet connection
+- Required for software updates
+
+![NAT Gateway](images/nat-gateway.png)
