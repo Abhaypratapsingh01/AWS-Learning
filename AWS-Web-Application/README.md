@@ -280,6 +280,14 @@ Although the Private EC2 instance does not have a Public IP address, it can stil
 
 ![NAT Gateway Test](images/nat-gateway-test.png).png)
 
+---
+
+# Conclusion
+
+This project demonstrates the deployment of a secure web application architecture on AWS using Amazon VPC. A Bastion Host was implemented to provide secure administrative access, while the Web Server was deployed in the Public Subnet and the Database Server remained protected in the Private Subnet. Internet connectivity for private instances was enabled through a NAT Gateway without exposing them to the public internet.
+
+This architecture follows AWS security best practices by isolating sensitive resources, controlling network access through Security Groups, and ensuring secure communication between different components of the infrastructure.
+
 - Successfully copied the private key to the Bastion Host.
 - Verified that the key file exists.
 - Updated file permissions to ensure secure SSH authentication.
