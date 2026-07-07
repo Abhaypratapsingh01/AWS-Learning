@@ -43,7 +43,7 @@ The first step was to create a Virtual Private Cloud (VPC) with the CIDR block *
 
 # Step 2: Create Public and Private Subnets
 
-- After creating the VPC, two subnets were created to separate public-facing resources from internal resources.
+After creating the VPC, two subnets were created to separate public-facing resources from internal resources.
 
 ### Public Subnet
 - CIDR Block: **10.0.1.0/24**
