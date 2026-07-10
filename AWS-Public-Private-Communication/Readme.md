@@ -151,3 +151,22 @@ Since the Windows instance is deployed in the Public Subnet, it can be accessed 
 
 ---
 
+
+# Step 6: Connect to Linux Server
+
+The Linux EC2 instance was accessed from the Windows instance using SSH.
+
+### Command
+
+```bash
+ssh -i My-server-key.pem ec2-user@<10.0.138.140>
+```
+
+### Purpose
+
+The Linux instance does not have a Public IP address. Therefore, it is accessed using its Private IP from another instance inside the same VPC.
+
+### Screenshot
+
+![SSH Connection](images/linux-ssh.png)
+
