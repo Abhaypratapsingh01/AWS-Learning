@@ -112,3 +112,27 @@ The Windows instance acts as the public machine that can be accessed over the in
 
 ---
 
+# Step 4: Launch Linux EC2 Instance
+
+An Amazon Linux 2 instance was launched inside the Private Subnet.
+
+### Configuration
+
+- Operating System : Amazon Linux 2
+- Public IP : Disabled
+- Private IP : Automatically Assigned
+
+### Security Group Rules
+
+| Type | Port | Source |
+|------|------|--------|
+| SSH | 22 | Windows Security Group |
+| ICMP | All | Windows Security Group |
+
+### Purpose
+
+The Linux instance remains private and can only be accessed from the Windows instance using SSH.
+
+### Screenshot
+[Linux Instance](images/linux-instance.png)
+
