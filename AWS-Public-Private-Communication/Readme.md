@@ -6,7 +6,7 @@ This project demonstrates how to create a Virtual Private Cloud (VPC) using the 
 
 # Architecture Diagram
 
-![Architecture Diagram](images/architecture diagram.png)
+![Architecture Diagram](images/architecture-diagram.png)
 
 ---
 
