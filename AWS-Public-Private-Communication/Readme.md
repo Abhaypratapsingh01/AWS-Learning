@@ -62,3 +62,27 @@ A  VPC was created using the AWS VPC Wizard. The wizard automatically created th
 
 ![VPC](images/vpc-created.png)
 
+---
+
+# Step 2: Verify Subnets
+
+The VPC contains two subnets.
+
+### Public Subnet
+
+- Used for internet-facing resources.
+- Windows EC2 instance is deployed here.
+- Connected to the Internet Gateway through the Public Route Table.
+
+### Private Subnet
+
+- Used for internal resources.
+- Amazon Linux EC2 instance is deployed here.
+- Does not have a public IP address.
+
+### Screenshot
+
+![Subnets](images/subnets.png)
+
+---
+
