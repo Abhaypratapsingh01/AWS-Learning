@@ -86,3 +86,29 @@ The VPC contains two subnets.
 
 ---
 
+# Step 3: Launch Windows EC2 Instance
+
+A Windows Server instance was launched inside the Public Subnet.
+
+### Configuration
+
+- Operating System : Windows Server 2022
+- Public IP : Enabled
+- Private IP : Automatically Assigned
+
+### Security Group Rules
+
+| Type | Port | Source |
+|------|------|--------|
+| RDP | 3389 | My IP |
+| ICMP | All | Linux Security Group |
+
+### Purpose
+
+The Windows instance acts as the public machine that can be accessed over the internet using Remote Desktop (RDP).
+
+### Screenshot
+[Windows Instance](images/windows-instance.png)
+
+---
+
