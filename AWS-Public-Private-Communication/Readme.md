@@ -180,7 +180,7 @@ The Linux instance successfully pinged the Windows instance using its Private IP
 ### Command
 
 ```cmd
-ping <Linux Private IP>
+ping <Windows Private IP>
 ```
 
 ### Screenshot
