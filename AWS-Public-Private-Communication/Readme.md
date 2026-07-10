@@ -136,3 +136,18 @@ The Linux instance remains private and can only be accessed from the Windows ins
 ### Screenshot
 ![Linux Instance](images/linux-instance.png)
 
+---
+# Step 5: Connect to Windows Server
+
+The Windows EC2 instance was accessed using Remote Desktop Protocol (RDP).
+
+### Purpose
+
+Since the Windows instance is deployed in the Public Subnet, it can be accessed from the internet using its Public IP address.
+
+### Screenshot
+
+![RDP Connection](images/windows-rdp.png)
+
+---
+
