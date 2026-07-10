@@ -189,7 +189,7 @@ ping <Windows Private IP>
 
 ---
 
-# Step 7: Verify Network Connectivity
+# Step 8: Verify Network Connectivity
 
 ## Windows to Linux
 
@@ -205,6 +205,18 @@ ping <Linux Private IP>
 
 ![Windows to Linux Ping](images/windows-to-linux-ping.png)
 
+---
+
+# Result
+
+Successfully created a custom AWS VPC with one Public Subnet and one Private Subnet.
+
+- Created networking resources using the AWS VPC Wizard.
+- Deployed a Windows EC2 instance in the Public Subnet.
+- Deployed an Amazon Linux EC2 instance in the Private Subnet.
+- Connected to the Windows instance using RDP.
+- Connected to the Linux instance using SSH.
+- Verified communication between both instances using Private IP addresses and ICMP Ping.
 ---
 
 
