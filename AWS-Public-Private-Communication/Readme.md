@@ -189,4 +189,22 @@ ping <Windows Private IP>
 
 ---
 
+# Step 7: Verify Network Connectivity
+
+## Windows to Linux
+
+The Windows instance successfully pinged the Linux instance using its Private IP.
+
+### Command
+
+```cmd
+ping <Linux Private IP>
+```
+
+### Screenshot
+
+![Windows to Linux Ping](images/windows-to-linux-ping.png)
+
+---
+
 
