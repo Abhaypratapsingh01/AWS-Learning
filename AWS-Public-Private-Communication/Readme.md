@@ -108,7 +108,7 @@ A Windows Server instance was launched inside the Public Subnet.
 The Windows instance acts as the public machine that can be accessed over the internet using Remote Desktop (RDP).
 
 ### Screenshot
-[Windows Instance](images/windows-instance.png)
+![Windows Instance](images/windows-instance.png)
 
 ---
 
@@ -134,5 +134,5 @@ An Amazon Linux 2 instance was launched inside the Private Subnet.
 The Linux instance remains private and can only be accessed from the Windows instance using SSH.
 
 ### Screenshot
-[Linux Instance](images/linux-instance.png)
+![Linux Instance](images/linux-instance.png)
 
