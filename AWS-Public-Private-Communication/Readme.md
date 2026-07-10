@@ -170,3 +170,23 @@ The Linux instance does not have a Public IP address. Therefore, it is accessed 
 
 ![SSH Connection](images/linux-ssh.png)
 
+---
+# Step 7: Verify Network Connectivity
+
+## Linux to Windows
+
+The Linux instance successfully pinged the Windows instance using its Private IP.
+
+### Command
+
+```cmd
+ping <Linux Private IP>
+```
+
+### Screenshot
+
+![Linux to Windows Ping](images/linux-to-windows-ping.png)
+
+---
+
+
