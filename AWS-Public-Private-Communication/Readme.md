@@ -41,3 +41,24 @@ The objective of this project is to understand how networking works in AWS by cr
 
 ---
 
+# Step 1: Create VPC
+
+A  VPC was created using the AWS VPC Wizard. The wizard automatically created the required networking resources such as Internet Gateway, Route Tables, and Subnets.
+
+### Configuration
+
+- VPC Name : My-VPC
+- IPv4 CIDR : 10.0.0.0/16
+
+### Resources Created
+
+- One Public Subnet
+- One Private Subnet
+- Internet Gateway
+- Public Route Table
+- Private Route Table
+
+### Screenshot
+
+![VPC](images/vpc-created.png)
+
